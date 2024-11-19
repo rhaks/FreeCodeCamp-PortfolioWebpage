@@ -1,0 +1,117 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+    header ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    header li {
+        flex: 1;
+        text-align: center;
+    }
+
+    header a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
+
+        header a:hover {
+            color: orangered;
+        }
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#welcome-section {
+    background-color: #f4f4f4;
+    padding-top: 100px; 
+}
+
+    #welcome-section img {
+        max-width: 150px;
+        border-radius: 50%;
+        margin: 20px 0;
+    }
+
+#projects {
+    background-color: #fff;
+}
+
+.project-tile {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #ddd;
+    line-height: 200px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+    .project-tile:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+#profile-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    #profile-link:hover {
+        background-color: #e60000;
+    }
+
+@media (max-width: 550px) {
+    header ul {
+        flex-direction: column;
+    }
+
+    header li {
+        flex: none;
+        margin-bottom: 10px;
+    }
+
+    a {
+        margin: 0;
+    }
+
+    .project-tile {
+        width: 100%;
+        height: 150px;
+        line-height: 150px;
+    }
+}
